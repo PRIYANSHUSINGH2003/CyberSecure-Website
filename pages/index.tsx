@@ -17,7 +17,9 @@ export default function Home() {
   const [graphData, setGraphData] = useState(null);
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:8080');
+    const socketUrl = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8080'; // Dynamic WebSocket URL
+
+    const socket = new WebSocket(socketUrl);
 
     socket.onopen = () => {
       console.log('Connected to WebSocket server');
