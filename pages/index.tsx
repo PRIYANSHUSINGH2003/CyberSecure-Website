@@ -17,7 +17,7 @@ export default function Home() {
   const [graphData, setGraphData] = useState(null);
 
   useEffect(() => {
-    const socketUrl = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8080'; // Dynamic WebSocket URL
+    const socketUrl = process.env.NEXT_PUBLIC_WS_URL || 'wss://cybersecurepro.onrender.com/:8080'; // Dynamic WebSocket URL
 
     const socket = new WebSocket(socketUrl);
 
