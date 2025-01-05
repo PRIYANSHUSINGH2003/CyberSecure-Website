@@ -20,7 +20,7 @@ export default function WhatOurClientsSay() {
                 <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__zoomIn">
                     <FaQuoteLeft className="text-yellow-400 text-4xl mb-4 animate__animated animate__fadeInLeft" />
                     <p className="text-gray-300 italic mb-4">
-                        "CyberSecure's team was incredibly thorough and professional in their approach. They transformed our web security."
+                        &quot;CyberSecure&apos;s team was incredibly thorough and professional in their approach. They transformed our web security.&quot;
                     </p>
                     <div className="flex items-center gap-3 mt-4">
                         <FaUserCircle className="text-yellow-400 text-5xl" />
@@ -32,7 +32,7 @@ export default function WhatOurClientsSay() {
                 <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__zoomIn animate__delay-1s">
                     <FaQuoteLeft className="text-yellow-400 text-4xl mb-4 animate__animated animate__fadeInLeft" />
                     <p className="text-gray-300 italic mb-4">
-                        "Thanks to CyberSecure, we’ve reduced our security breaches by 90%."
+                        &quot;Thanks to CyberSecure, we&rsquo;ve reduced our security breaches by 90%.&quot;
                     </p>
                     <div className="flex items-center gap-3 mt-4">
                         <FaUserCircle className="text-yellow-400 text-5xl" />
@@ -44,7 +44,7 @@ export default function WhatOurClientsSay() {
                 <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 animate__animated animate__zoomIn animate__delay-2s">
                     <FaQuoteLeft className="text-yellow-400 text-4xl mb-4 animate__animated animate__fadeInLeft" />
                     <p className="text-gray-300 italic mb-4">
-                        "Their real-time threat analysis tools are top-notch and easy to use."
+                        &quot;Their real-time threat analysis tools are top-notch and easy to use.&quot;
                     </p>
                     <div className="flex items-center gap-3 mt-4">
                         <FaUserCircle className="text-yellow-400 text-5xl" />
