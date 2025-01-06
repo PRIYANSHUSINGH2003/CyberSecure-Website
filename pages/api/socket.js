@@ -12,10 +12,20 @@ mongoose.connect('mongodb+srv://priyanshu:110044@cluster0.pb8ps.mongodb.net/?ret
 const wss = new WebSocket.Server({ port: 10000 });
 wss.on('connection', (ws) => {
     console.log('A new client connected');
-    ws.send(JSON.stringify({ message: 'Welcome to the WebSocket server' }));
+    ws.on('message', (message) => {
+        console.log('Received:', message);
+    });
 });
 
-console.log('WebSocket server running on ws://localhost:8080');
+const server = app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+server.on('upgrade', (request, socket, head) => {
+    wss.handleUpgrade(request, socket, head, (ws) => {
+        wss.emit('connection', ws, request);
+    });
+});
 
 // Define the MongoDB schema for attack graph data
 const attackGraphSchema = new mongoose.Schema({
