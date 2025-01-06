@@ -9,7 +9,7 @@ mongoose.connect('mongodb+srv://priyanshu:110044@cluster0.pb8ps.mongodb.net/?ret
 
 
 // WebSocket server setup
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: 1000 });
 wss.on('connection', (ws) => {
     console.log('A new client connected');
     ws.send(JSON.stringify({ message: 'Welcome to the WebSocket server' }));
