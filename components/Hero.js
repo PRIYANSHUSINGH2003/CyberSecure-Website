@@ -2,35 +2,44 @@ import { FaShieldAlt, FaLaptopCode, FaUsers } from 'react-icons/fa'; // Icons fo
 
 export default function Hero() {
     return (
-        <section className="relative w-full bg-gradient-to-r from-indigo-800 via-purple-800 to-blue-800 py-20 text-white overflow-hidden">
-            <div className="absolute inset-0 bg-black opacity-40"></div> {/* Dark overlay for better contrast */}
+        <section className="relative w-full bg-gradient-to-r from-indigo-900 via-purple-900 to-blue-900 py-20 text-white overflow-hidden">
+            {/* Background Overlay */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <div className="container mx-auto text-center relative z-10">
-                <h1 className="text-5xl font-extrabold leading-tight text-yellow-400 mb-6">
+            <div className="container mx-auto px-6 lg:px-20 text-center relative z-10">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-yellow-400 mb-6">
                     Protect Your Digital World with Advanced Cybersecurity Solutions
                 </h1>
-                <p className="text-xl text-gray-300 mb-8">
+                <p className="text-lg md:text-xl text-gray-300 mb-8">
                     Real-time threat monitoring, attack prevention, and actionable insights to safeguard your network.
                 </p>
 
-                <div className="flex justify-center space-x-12 mb-8">
-                    {/* Icons and small descriptions */}
+                <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 md:space-x-12 mb-8">
+                    {/* Threat Protection */}
                     <div className="flex flex-col items-center transform hover:scale-110 transition duration-300">
-                        <FaShieldAlt className="text-6xl text-yellow-400 mb-4" />
-                        <h3 className="text-xl font-semibold">Threat Protection</h3>
-                        <p className="text-gray-300">24/7 monitoring to shield your network from cyber threats.</p>
+                        <FaShieldAlt className="text-5xl md:text-6xl text-yellow-400 mb-4" />
+                        <h3 className="text-lg md:text-xl font-semibold">Threat Protection</h3>
+                        <p className="text-gray-300 text-sm md:text-base text-center">
+                            24/7 monitoring to shield your network from cyber threats.
+                        </p>
                     </div>
 
+                    {/* Code Security */}
                     <div className="flex flex-col items-center transform hover:scale-110 transition duration-300">
-                        <FaLaptopCode className="text-6xl text-yellow-400 mb-4" />
-                        <h3 className="text-xl font-semibold">Code Security</h3>
-                        <p className="text-gray-300">Secure your applications with state-of-the-art code security tools.</p>
+                        <FaLaptopCode className="text-5xl md:text-6xl text-yellow-400 mb-4" />
+                        <h3 className="text-lg md:text-xl font-semibold">Code Security</h3>
+                        <p className="text-gray-300 text-sm md:text-base text-center">
+                            Secure your applications with state-of-the-art code security tools.
+                        </p>
                     </div>
 
+                    {/* Team Collaboration */}
                     <div className="flex flex-col items-center transform hover:scale-110 transition duration-300">
-                        <FaUsers className="text-6xl text-yellow-400 mb-4" />
-                        <h3 className="text-xl font-semibold">Team Collaboration</h3>
-                        <p className="text-gray-300">Work together efficiently with our secure platform and tools.</p>
+                        <FaUsers className="text-5xl md:text-6xl text-yellow-400 mb-4" />
+                        <h3 className="text-lg md:text-xl font-semibold">Team Collaboration</h3>
+                        <p className="text-gray-300 text-sm md:text-base text-center">
+                            Work together efficiently with our secure platform and tools.
+                        </p>
                     </div>
                 </div>
 
@@ -42,8 +51,8 @@ export default function Hero() {
                 </a>
             </div>
 
-            {/* Animated background elements */}
-            <div className="absolute bottom-0 left-0 w-full h-full opacity-30 animate-pulse">
+            {/* Animated Background Elements */}
+            <div className="absolute bottom-0 left-0 w-full h-full opacity-20 animate-pulse">
                 <svg className="absolute w-full h-full" viewBox="0 0 1440 320">
                     <path
                         fill="currentColor"
