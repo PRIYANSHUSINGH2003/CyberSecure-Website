@@ -1,7 +1,9 @@
 // pages/api/socket.js
 const WebSocket = require('ws');  // Use CommonJS require
 const mongoose = require('mongoose');
+const express = require('express');
 const PORT = 10000;
+const app = express()
 
 // MongoDB connection setup without deprecated options
 mongoose.connect('mongodb+srv://priyanshu:110044@cluster0.pb8ps.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
