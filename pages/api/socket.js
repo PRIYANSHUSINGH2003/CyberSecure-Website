@@ -1,9 +1,6 @@
 // pages/api/socket.js
 const WebSocket = require('ws');  // Use CommonJS require
 const mongoose = require('mongoose');
-const express = require('express');
-const PORT = 10000;
-const app = express()
 
 // MongoDB connection setup without deprecated options
 mongoose.connect('mongodb+srv://priyanshu:110044@cluster0.pb8ps.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
@@ -17,16 +14,6 @@ wss.on('connection', (ws) => {
     console.log('A new client connected');
     ws.on('message', (message) => {
         console.log('Received:', message);
-    });
-});
-
-const server = app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
-
-server.on('upgrade', (request, socket, head) => {
-    wss.handleUpgrade(request, socket, head, (ws) => {
-        wss.emit('connection', ws, request);
     });
 });
 
