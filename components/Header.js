@@ -16,6 +16,11 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
+                    <Link href="/" legacyBehavior>
+                        <a className="text-lg hover:text-yellow-400 transition duration-300">
+                            Home
+                        </a>
+                    </Link>
                     <Link href="/services" legacyBehavior>
                         <a className="text-lg hover:text-yellow-400 transition duration-300">
                             Services
@@ -24,6 +29,11 @@ export default function Header() {
                     <Link href="/about-us" legacyBehavior>
                         <a className="text-lg hover:text-yellow-400 transition duration-300">
                             About Us
+                        </a>
+                    </Link>
+                    <Link href="/accessControl" legacyBehavior>
+                        <a className="text-lg hover:text-yellow-400 transition duration-300">
+                            Access Control
                         </a>
                     </Link>
                     <Link href="/contact" legacyBehavior>
@@ -56,6 +66,14 @@ export default function Header() {
                     className="md:hidden bg-indigo-900 text-white transition-all duration-300"
                     role="menu"
                 >
+                    <Link href="/" legacyBehavior>
+                        <a
+                            className="block px-4 py-2 hover:bg-indigo-800"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Home
+                        </a>
+                    </Link>
                     <Link href="/services" legacyBehavior>
                         <a
                             className="block px-4 py-2 hover:bg-indigo-800"
@@ -70,6 +88,14 @@ export default function Header() {
                             onClick={() => setIsOpen(false)}
                         >
                             About Us
+                        </a>
+                    </Link>
+                    <Link href="/accessControl" legacyBehavior>
+                        <a
+                            className="block px-4 py-2 hover:bg-indigo-800"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Access Control
                         </a>
                     </Link>
                     <Link href="/contact" legacyBehavior>
