@@ -1,7 +1,11 @@
 import { FaShieldAlt, FaUserTie, FaChartLine, FaUsers } from "react-icons/fa";
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default function AboutUs() {
     return (
+        <>
+        <Header />
         <section className="bg-gradient-to-b from-gray-900 to-black text-white py-20 px-6 md:px-20 lg:px-40">
             {/* Page Header */}
             <div className="text-center mb-12">
@@ -86,5 +90,7 @@ export default function AboutUs() {
                 </a>
             </div>
         </section>
+        <Footer />
+        </>
     );
 }

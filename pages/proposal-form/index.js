@@ -1,7 +1,10 @@
 import { FaPaperPlane, FaUserAlt, FaEnvelope, FaPhone, FaClipboardList } from "react-icons/fa";
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default function ProposalForm() {
     return (
+        <><Header />
         <section
             id="proposal-form"
             className="bg-gray-900 text-white py-16 px-6 md:px-20 lg:px-40"
@@ -58,5 +61,7 @@ export default function ProposalForm() {
                 </button>
             </form>
         </section>
+        <Footer />
+        </>
     );
 }
